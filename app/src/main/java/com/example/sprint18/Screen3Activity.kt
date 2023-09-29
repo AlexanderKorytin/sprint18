@@ -3,11 +3,16 @@ package com.example.sprint18
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import androidx.activity.OnBackPressedCallback
 
 class Screen3Activity : AppCompatActivity(R.layout.activity_screen3) {
+    private val handler = Handler(Looper.getMainLooper())
+    val is
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,7 +45,9 @@ class Screen3Activity : AppCompatActivity(R.layout.activity_screen3) {
     }
 
     private fun backToPreviousScreen() {
-        TODO("Пока не знаем, как реализовать")
+
+//        val back = OnBackPressedCallback()
+//        this.onBackPressedDispatcher.onBackPressed()
     }
 
     private fun openScreen3() {
@@ -48,5 +55,7 @@ class Screen3Activity : AppCompatActivity(R.layout.activity_screen3) {
 
         this.startActivity(intent)
     }
+    private fun debonce(){
 
+    }
 }
