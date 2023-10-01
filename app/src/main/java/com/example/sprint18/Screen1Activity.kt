@@ -9,6 +9,12 @@ import android.widget.TextView
 
 class Screen1Activity : AppCompatActivity(R.layout.activity_screen1) {
 
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+
+        Log.d("NAVEXAMPLE", "Screen1 -> onNewIntent")
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Sprint 18</string>
+    <string name="toast_screen3_message">You\'re sure. To exit, press again for 2 seconds</string>
 </resources>
